@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "profile": "Profile",
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "contact": "Contact",
+    "download_resume": "Download Resume"
+  },
+  "hero": {
+    "role": "Digital Solutions Architect",
+    "name_line1": "KITTISAK",
+    "name_line2": "PHANNGEAM",
+    "description": "Specializing in user experience design and digital system development. Experienced in creating impactful solutions for enterprise-level organizations with a deep understanding of user-centric design and technology.",
+    "view_portfolio": "View Portfolio"
+  },
+  "achievements": {
+    "recognition": {
+      "title": "Industry Recognition",
+      "description": "Multiple design awards and certifications in UX/UI excellence."
+    },
+    "experience": {
+      "title": "Enterprise Experience",
+      "description": "5+ years working with Fortune 500 companies on high-impact projects."
+    },
+    "leadership": {
+      "title": "Team Leadership",
+      "description": "Led cross-functional teams of 10+ professionals to deliver complex solutions."
+    }
+  },
+  "about": {
+    "title": "Professional Profile",
+    "heading": "Strategic Design & Development Leadership",
+    "p1": "With over 8 years in the technology industry, I have collaborated with leading domestic and international organizations to create high-performance digital solutions.",
+    "p2": "My expertise lies in analyzing business requirements and translating them into functional, user-friendly systems, while managing development teams and coordinating with executive-level stakeholders.",
+    "p3": "I am committed to delivering work that not only meets current needs but also accounts for future growth and scalability, ensuring sustainable success for the organization."
+  },
+  "skills": {
+    "title": "Core Competencies",
+    "heading": "Areas of Expertise",
+    "ux_design": {
+      "title": "User Experience Design",
+      "items": [
+        "User Research & Analysis",
+        "Information Architecture",
+        "Usability Testing",
+        "Accessibility Standards (WCAG)"
+      ]
+    },
+    "dev": {
+      "title": "Interface Development",
+      "items": [
+        "Frontend Development (React, Vue, Angular)",
+        "Responsive Web Design",
+        "Cross-Platform Compatibility",
+        "Performance Optimization"
+      ]
+    },
+    "tech": {
+      "title": "Technical Proficiency",
+      "items": [
+        "HTML5, CSS3, JavaScript (ES6+), TypeScript",
+        "Modern Frontend Frameworks",
+        "Adobe Creative Suite",
+        "Figma, Sketch, InVision"
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "Selected Works",
+    "heading": "Project Portfolio"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "heading": "Let's Collaborate",
+    "description": "I am currently available for freelance projects and full-time opportunities. If you are interested in a project consultation or business collaboration, please feel free to reach out.",
+    "send_message": "Send a Message"
+  },
+  "projects": {
+    "p1": {
+      "title": "Enterprise Dashboard System",
+      "type": "Enterprise Solution",
+      "category": "Data Visualization",
+      "description": "A comprehensive data visualization platform designed for enterprise-level decision-making with advanced analytics capabilities.",
+      "details": "Led the complete UX/UI redesign of a mission-critical dashboard system, resulting in a 40% improvement in user task completion rates and enhanced data comprehension."
+    },
+    "p2": {
+      "title": "Financial Services Platform",
+      "type": "Fintech Application",
+      "category": "Web Application",
+      "description": "A secure and compliant financial services platform with advanced user authentication and transaction processing.",
+      "details": "Developed a comprehensive fintech solution with an emphasis on security, compliance, and user experience. Integrated with multiple payment gateways and regulatory APIs."
+    },
+    "p3": {
+      "title": "Corporate Brand Identity",
+      "type": "Brand Development",
+      "category": "Visual Identity",
+      "description": "A complete corporate identity system including logo design, brand guidelines, and digital asset management.",
+      "details": "Orchestrated a comprehensive rebranding initiative for a multinational corporation, establishing a cohesive visual identity across 15+ countries and all digital platforms."
+    },
+    "p4": {
+      "title": "Healthcare Management System",
+      "type": "Healthcare Technology",
+      "category": "System Integration",
+      "description": "An integrated healthcare management system with patient records, appointment scheduling, and telemedicine capabilities.",
+      "details": "Architected a user-centered healthcare platform ensuring HIPAA compliance while maintaining an intuitive user experience for both healthcare professionals and patients."
+    }
+  },
+  "modal": {
+    "view_project": "View Project",
+    "duration": "Duration",
+    "team_size": "Team Size",
+    "tech": "Technologies",
+    "overview": "Project Overview",
+    "details": "Implementation Details"
+  }
+}
