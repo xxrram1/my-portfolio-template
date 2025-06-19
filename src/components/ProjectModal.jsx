@@ -1,14 +1,37 @@
 import { ExternalLink, X } from 'lucide-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+
+const backdropVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
+const modalVariants = {
+  hidden: { y: 50, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { type: 'spring', stiffness: 100 } },
+  exit: { y: 50, opacity: 0 },
+};
 
 const ProjectModal = ({ project, onClose }) => {
   const { t } = useTranslation();
-  if (!project) return null;
+  // ไม่ต้องเช็ค if (!project) return null; แล้ว เพราะ AnimatePresence จะจัดการให้
 
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 sm:p-8 animate-fade-in">
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slide-up">
+    <motion.div
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 sm:p-8"
+      variants={backdropVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      onClick={onClose} // ปิด Modal เมื่อคลิกที่ backdrop
+    >
+      <motion.div
+        className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+        variants={modalVariants}
+        onClick={(e) => e.stopPropagation()} // ป้องกันการปิด Modal เมื่อคลิกที่ตัว Modal เอง
+      >
         <div className="relative">
           <button
             onClick={onClose}
@@ -21,6 +44,7 @@ const ProjectModal = ({ project, onClose }) => {
             src={project.thumbnail}
             alt={t(project.titleKey)}
             className="w-full h-60 md:h-80 object-cover rounded-t-lg"
+            loading="lazy"
           />
         </div>
         <div className="p-8 md:p-12">
@@ -89,8 +113,8 @@ const ProjectModal = ({ project, onClose }) => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

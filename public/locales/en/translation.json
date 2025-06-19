@@ -1,11 +1,18 @@
 {
+  "skip_to_content": "Skip to main content",
   "nav": {
     "overview": "Overview",
     "profile": "Profile",
     "expertise": "Expertise",
     "projects": "Projects",
+    "blog": "Blog",
     "contact": "Contact",
-    "download_resume": "Download Resume"
+    "download_resume": "Download Resume",
+    "theme_switcher": "Switch Theme",
+    "toggle_theme": "Toggle light and dark theme",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "open_command_palette": "Open command menu"
   },
   "hero": {
     "role": "Digital Solutions Architect",
@@ -15,18 +22,9 @@
     "view_portfolio": "View Portfolio"
   },
   "achievements": {
-    "recognition": {
-      "title": "Industry Recognition",
-      "description": "Multiple design awards and certifications in UX/UI excellence."
-    },
-    "experience": {
-      "title": "Enterprise Experience",
-      "description": "5+ years working with Fortune 500 companies on high-impact projects."
-    },
-    "leadership": {
-      "title": "Team Leadership",
-      "description": "Led cross-functional teams of 10+ professionals to deliver complex solutions."
-    }
+    "recognition": { "title": "Industry Recognition", "description": "Multiple design awards and certifications in UX/UI excellence." },
+    "experience": { "title": "Enterprise Experience", "description": "5+ years working with Fortune 500 companies on high-impact projects." },
+    "leadership": { "title": "Team Leadership", "description": "Led cross-functional teams of 10+ professionals to deliver complex solutions." }
   },
   "about": {
     "title": "Professional Profile",
@@ -38,80 +36,131 @@
   "skills": {
     "title": "Core Competencies",
     "heading": "Areas of Expertise",
-    "ux_design": {
-      "title": "User Experience Design",
-      "items": [
-        "User Research & Analysis",
-        "Information Architecture",
-        "Usability Testing",
-        "Accessibility Standards (WCAG)"
-      ]
+    "ux_design": { "title": "User Experience Design", "items": ["User Research & Analysis", "Information Architecture", "Usability Testing", "Accessibility Standards (WCAG)"] },
+    "dev": { "title": "Interface Development", "items": ["Frontend Development (React, Vue, Angular)", "Responsive Web Design", "Cross-Platform Compatibility", "Performance Optimization"] },
+    "tech": { "title": "Technical Proficiency", "items": ["HTML5, CSS3, JavaScript (ES6+), TypeScript", "Modern Frontend Frameworks", "Adobe Creative Suite", "Figma, Sketch, InVision"] }
+  },
+  "portfolio": { "title": "Selected Works", "heading": "Project Portfolio", "view_case_study": "View Case Study" },
+  "contact": { "title": "Get in Touch", "heading": "Let's Collaborate", "description": "I am currently available for freelance projects and full-time opportunities. If you are interested in a project consultation or business collaboration, please feel free to reach out.", "send_message": "Send a Message" },
+  "blog": { "title": "Articles & Insights", "heading": "From Thoughts to Sharing", "read_more": "Read More" },
+  "articles": {
+    "a1": { 
+      "title": "Exploring Key UX Design Trends for 2025", 
+      "summary": "A look into the significant user experience trends set to define digital products next year, from hyper-personalization to sustainable design.", 
+      "content": "The digital world is in constant flux. In 2025, we're set to witness exciting shifts in UX design, driven by evolving technology and user expectations. The key trends aren't just about aesthetics; they focus on creating smarter, more personal, and meaningful experiences.\n\nOne of the most significant trends is Hyper-Personalization. This involves tailoring experiences to each individual user with high specificity, leveraging AI and Machine Learning to analyze behavior. The goal is to present content and functionality that meet the user's immediate needs, effectively anticipating what they want before they even ask.\n\nFurthermore, immersive technologies like AR and VR will play a larger role in daily life. Designing UX for these virtual worlds presents a new and exciting challenge. We must consider interactions in 3D space, gesture controls, and minimizing motion sickness to create seamless and engaging experiences.\n\nLast but not least is the trend toward Sustainable and Ethical Design. Designers are increasingly expected to consider the environmental and social impact of their work. This includes creating low-carbon websites that consume less energy and designing for transparency in how personal data is used. These practices not only build trust but also reflect a brand's corporate responsibility."
     },
-    "dev": {
-      "title": "Interface Development",
-      "items": [
-        "Frontend Development (React, Vue, Angular)",
-        "Responsive Web Design",
-        "Cross-Platform Compatibility",
-        "Performance Optimization"
-      ]
-    },
-    "tech": {
-      "title": "Technical Proficiency",
-      "items": [
-        "HTML5, CSS3, JavaScript (ES6+), TypeScript",
-        "Modern Frontend Frameworks",
-        "Adobe Creative Suite",
-        "Figma, Sketch, InVision"
-      ]
+    "a2": { 
+      "title": "Getting Started with React Hooks: A Beginner's Guide", 
+      "summary": "Learn the fundamentals of React Hooks, how to use useState and useEffect to manage state and side effects in functional components effectively.", 
+      "content": "The introduction of React Hooks in version 16.8 completely revolutionized how we write React components. Hooks allow us to use state and other React features in functional components without ever writing a class. This leads to shorter, more readable, and easier-to-manage code.\n\nThe first Hook every developer should know is `useState`. It's the heart of state management in a component. `useState` takes an initial state as an argument and returns an array with two members: the current state value and a function to update it. Calling the update function will cause the component to re-render with the new state value.\n\n`useEffect` is another powerful Hook for managing side effects, such as data fetching from an API, setting up subscriptions, or directly manipulating the DOM. `useEffect` runs after the component has rendered. We can control when the effect runs by passing a dependencies array as the second argument. If you pass an empty array `[]`, the effect will run only once after the initial render, making it perfect for initial data fetching.\n\nBeyond these two, other useful Hooks include `useContext` for passing data down the component tree without prop-drilling, `useReducer` for managing complex state, and `useCallback` with `useMemo` for performance optimizations. Understanding and appropriately using these Hooks is the key to building modern and efficient React applications."
     }
-  },
-  "portfolio": {
-    "title": "Selected Works",
-    "heading": "Project Portfolio"
-  },
-  "contact": {
-    "title": "Get in Touch",
-    "heading": "Let's Collaborate",
-    "description": "I am currently available for freelance projects and full-time opportunities. If you are interested in a project consultation or business collaboration, please feel free to reach out.",
-    "send_message": "Send a Message"
   },
   "projects": {
     "p1": {
-      "title": "Enterprise Dashboard System",
-      "type": "Enterprise Solution",
-      "category": "Data Visualization",
-      "description": "A comprehensive data visualization platform designed for enterprise-level decision-making with advanced analytics capabilities.",
-      "details": "Led the complete UX/UI redesign of a mission-critical dashboard system, resulting in a 40% improvement in user task completion rates and enhanced data comprehension."
+      "title": "Enterprise Dashboard System", "type": "Enterprise Solution", "category": "Data Visualization", "description": "A comprehensive data visualization platform designed for enterprise-level decision-making with advanced analytics capabilities.",
+      "caseStudy": {
+        "problem_desc": "Data in the legacy system was scattered, preventing executives from getting a clear overview for quick and accurate strategic decisions. User adoption was low due to a complex and unfriendly UI.",
+        "role_desc": "Acted as the Lead UX/UI Designer and Frontend Developer, working closely with the Product Manager and backend team from user research, wireframing, and prototyping to developing and testing the interface.",
+        "process_steps": [
+          "Research: Interviewed stakeholders and end-users to understand pain points.",
+          "Design: Created user flows, wireframes, and high-fidelity mockups on Figma.",
+          "Prototyping: Built clickable prototypes for user testing.",
+          "Development: Developed the frontend using React and D3.js to build a responsive and efficient interface.",
+          "Testing: Conducted usability testing and gathered feedback for iteration."
+        ],
+        "solution_desc": "Redesigned the entire dashboard with a focus on intuitive data visualization. Users can now customize views and filter data as needed. Developed custom components to render complex but performant charts and graphs.",
+        "results_desc": "After launch, executives expressed high satisfaction with the clear and actionable data provided, which was actively used in strategic meetings.",
+        "results_quote": "User task completion rate increased by 40%, and the time required to generate reports decreased by 60%."
+      }
     },
     "p2": {
-      "title": "Financial Services Platform",
-      "type": "Fintech Application",
-      "category": "Web Application",
-      "description": "A secure and compliant financial services platform with advanced user authentication and transaction processing.",
-      "details": "Developed a comprehensive fintech solution with an emphasis on security, compliance, and user experience. Integrated with multiple payment gateways and regulatory APIs."
+      "title": "Financial Services Platform", "type": "Fintech Application", "category": "Web Application", "description": "A secure and compliant financial services platform with advanced user authentication and transaction processing.",
+      "caseStudy": {
+        "problem_desc": "The challenge was to build a platform with the highest level of security, compliant with financial regulations, while still providing a seamless and intuitive user experience, a rarity in existing solutions.",
+        "role_desc": "Served as a Full-stack Developer with a focus on Security Architecture. Responsible for integrating payment gateways, implementing KYC processes, and ensuring critical data encryption.",
+        "process_steps": [
+          "Security-First Design: Architected the system with security as the top priority.",
+          "API Integration: Connected with banking and identity verification APIs.",
+          "Penetration Testing: Conducted tests to identify system vulnerabilities.",
+          "Compliance Audit: Ensured adherence to legal and regulatory requirements.",
+          "Phased Rollout: Launched features incrementally to minimize risk."
+        ],
+        "solution_desc": "Developed the platform on a microservices architecture for flexibility and security. Implemented Multi-Factor Authentication (MFA), end-to-end encryption, and a real-time fraudulent transaction detection system.",
+        "results_desc": "The platform now operates with high uptime and has gained the trust of users and investors.",
+        "results_quote": "Achieved full regulatory compliance, reduced transaction fraud rate by 95%, and user trust scores increased by 50%."
+      }
     },
     "p3": {
-      "title": "Corporate Brand Identity",
-      "type": "Brand Development",
-      "category": "Visual Identity",
-      "description": "A complete corporate identity system including logo design, brand guidelines, and digital asset management.",
-      "details": "Orchestrated a comprehensive rebranding initiative for a multinational corporation, establishing a cohesive visual identity across 15+ countries and all digital platforms."
+      "title": "Corporate Brand Identity", "type": "Brand Development", "category": "Visual Identity", "description": "A complete corporate identity system including logo design, brand guidelines, and digital asset management.",
+      "caseStudy": {
+        "problem_desc": "The company suffered from an outdated and inconsistent brand identity across countries and digital platforms, leading to brand dilution and customer confusion.",
+        "role_desc": "Acted as the Project Lead and Brand Strategist. I coordinated with marketing teams in 15 countries, managed a team of designers, and presented the new brand strategy to executive leadership.",
+        "process_steps": [
+          "Brand Audit: Assessed the current state of the brand.",
+          "Stakeholder Workshops: Conducted workshops to gather requirements.",
+          "Concept Development: Developed design concepts.",
+          "Guideline Creation: Produced clear brand guidelines.",
+          "DAM Implementation: Rolled out a Digital Asset Management system."
+        ],
+        "solution_desc": "Developed a comprehensive brand system including a new logo, color palette, typography, and communication guidelines. Created a central Digital Asset Management (DAM) portal for all teams to access approved assets.",
+        "results_desc": "A unified brand communication standard was established across the organization.",
+        "results_quote": "Increased brand recognition by 30% in key markets and reduced time-to-market for campaigns by 25%."
+      }
     },
     "p4": {
-      "title": "Healthcare Management System",
-      "type": "Healthcare Technology",
-      "category": "System Integration",
-      "description": "An integrated healthcare management system with patient records, appointment scheduling, and telemedicine capabilities.",
-      "details": "Architected a user-centered healthcare platform ensuring HIPAA compliance while maintaining an intuitive user experience for both healthcare professionals and patients."
+      "title": "Healthcare Management System", "type": "Healthcare Technology", "category": "System Integration", "description": "An integrated healthcare management system with patient records, appointment scheduling, and telemedicine capabilities.",
+      "caseStudy": {
+        "problem_desc": "Healthcare professionals used multiple, disconnected systems for patient records, scheduling, and billing, causing inefficiencies and a higher risk of medical errors.",
+        "role_desc": "Served as the Solutions Architect, designing the end-to-end system architecture with a focus on HIPAA compliance. I led the integration of various third-party services like lab systems and insurance providers.",
+        "process_steps": [
+          "Requirement Analysis: Analyzed hospital workflows and needs.",
+          "Architecture Design: Designed a system based on HL7/FHIR standards.",
+          "Backend Development: Built the backend using Spring Boot.",
+          "Frontend Development: Developed the frontend with Angular.",
+          "Security Testing: Conducted rigorous data security and compliance tests."
+        ],
+        "solution_desc": "A unified, web-based platform for both doctors and patients. It featured a central Electronic Health Record (EHR), an automated scheduling and billing system, and a secure patient portal to access records and communicate with providers.",
+        "results_desc": "Elevated the standard of healthcare service delivery, making it more efficient and secure.",
+        "results_quote": "Reduced administrative time for medical staff by 5 hours/week on average and increased patient satisfaction scores for data access by 70%."
+      }
     }
   },
-  "modal": {
-    "view_project": "View Project",
-    "duration": "Duration",
-    "team_size": "Team Size",
-    "tech": "Technologies",
-    "overview": "Project Overview",
-    "details": "Implementation Details"
+  "case_study": { "back_to_projects": "Back to Projects", "problem": "The Problem & Challenge", "role": "My Role", "process": "The Process", "solution": "The Solution", "results": "Key Results", "gallery": "Project Gallery" },
+  "modal": { "view_project": "View Project", "duration": "Duration", "team_size": "Team Size", "tech": "Technologies", "overview": "Project Overview", "details": "Implementation Details" },
+  "command_palette": {
+    "title": "Command Menu",
+    "placeholder": "Type a command or search...",
+    "no_results": "No results found.",
+    "navigation_group": "Navigation",
+    "go_to_home": "Go to: Home",
+    "go_to_profile": "Go to: Profile",
+    "go_to_expertise": "Go to: Expertise",
+    "go_to_projects": "Go to: Projects",
+    "go_to_contact": "Go to: Contact",
+    "actions_group": "Actions",
+    "switch_to_light": "Switch to Light Theme",
+    "switch_to_dark": "Switch to Dark Theme",
+    "download_resume": "Download Resume",
+    "language_group": "Language",
+    "change_to_english": "Change to English",
+    "change_to_thai": "Change to Thai",
+    "change_to_chinese": "Change to Chinese"
+  },
+  "footer": {
+    "go_to_top": "Go to top"
+  },
+  "persona_modal": {
+    "title": "Welcome to my Portfolio!",
+    "subtitle": "To best tailor the content to your interests, please select your role:",
+    "roles": {
+      "recruiter": "Recruiter / HR",
+      "tech": "Hiring Manager (Tech)",
+      "client": "Client / Designer",
+      "guest": "Just Browsing"
+    }
+  },
+  "view_switcher": {
+      "viewing_as": "Viewing as",
+      "change_view": "Change View"
   }
 }

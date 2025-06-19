@@ -8,31 +8,29 @@ const LanguageSwitcher = () => {
     i18n.changeLanguage(lng);
   };
 
+  const languages = [
+    { code: 'th', label: 'TH' },
+    { code: 'en', label: 'EN' },
+    { code: 'zh', label: 'ZH' },
+  ];
+
   return (
-    <div className="flex items-center space-x-2 text-sm">
-      <button
-        onClick={() => handleLanguageChange('th')}
-        className={`uppercase font-semibold ${i18n.language === 'th' ? 'text-slate-900 dark:text-white' : 'text-slate-500 dark:text-slate-400'}`}
-        disabled={i18n.language === 'th'}
-      >
-        TH
-      </button>
-      <div className="w-px h-4 bg-slate-300 dark:bg-slate-600"></div>
-      <button
-        onClick={() => handleLanguageChange('en')}
-        className={`uppercase font-semibold ${i18n.language === 'en' ? 'text-slate-900 dark:text-white' : 'text-slate-500 dark:text-slate-400'}`}
-        disabled={i18n.language === 'en'}
-      >
-        EN
-      </button>
-      <div className="w-px h-4 bg-slate-300 dark:bg-slate-600"></div>
-      <button
-        onClick={() => handleLanguageChange('zh')}
-        className={`uppercase font-semibold ${i18n.language === 'zh' ? 'text-slate-900 dark:text-white' : 'text-slate-500 dark:text-slate-400'}`}
-        disabled={i18n.language === 'zh'}
-      >
-        ZH
-      </button>
+    <div className="flex items-center space-x-2 text-sm p-1 bg-slate-100 dark:bg-slate-800 rounded-full">
+      {languages.map((lang, index) => (
+        <button
+          key={lang.code}
+          onClick={() => handleLanguageChange(lang.code)}
+          className={`px-3 py-1 rounded-full text-sm font-semibold transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 dark:focus:ring-offset-slate-900 ${
+            i18n.language.startsWith(lang.code) 
+              ? 'bg-white text-indigo-600 shadow-sm dark:bg-slate-900' 
+              : 'text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+          }`}
+          disabled={i18n.language.startsWith(lang.code)}
+          aria-current={i18n.language.startsWith(lang.code)}
+        >
+          {lang.label}
+        </button>
+      ))}
     </div>
   );
 };
