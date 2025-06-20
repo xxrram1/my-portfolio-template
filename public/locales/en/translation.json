@@ -1,4 +1,9 @@
 {
+  "seo": {
+    "home_title": "Kittisak Phanngeam - Digital Solutions Architect Portfolio",
+    "case_study_title": "{{projectTitle}} | Case Study",
+    "article_title": "{{articleTitle}} | Blog"
+  },
   "skip_to_content": "Skip to main content",
   "nav": {
     "overview": "Overview",
@@ -7,12 +12,12 @@
     "projects": "Projects",
     "blog": "Blog",
     "contact": "Contact",
+    "download_cv": "Download CV",
     "download_resume": "Download Resume",
     "theme_switcher": "Switch Theme",
     "toggle_theme": "Toggle light and dark theme",
     "open_menu": "Open menu",
     "close_menu": "Close menu",
-    "open_command_palette": "Open command menu"
   },
   "hero": {
     "role": "Digital Solutions Architect",
@@ -127,25 +132,6 @@
   },
   "case_study": { "back_to_projects": "Back to Projects", "problem": "The Problem & Challenge", "role": "My Role", "process": "The Process", "solution": "The Solution", "results": "Key Results", "gallery": "Project Gallery" },
   "modal": { "view_project": "View Project", "duration": "Duration", "team_size": "Team Size", "tech": "Technologies", "overview": "Project Overview", "details": "Implementation Details" },
-  "command_palette": {
-    "title": "Command Menu",
-    "placeholder": "Type a command or search...",
-    "no_results": "No results found.",
-    "navigation_group": "Navigation",
-    "go_to_home": "Go to: Home",
-    "go_to_profile": "Go to: Profile",
-    "go_to_expertise": "Go to: Expertise",
-    "go_to_projects": "Go to: Projects",
-    "go_to_contact": "Go to: Contact",
-    "actions_group": "Actions",
-    "switch_to_light": "Switch to Light Theme",
-    "switch_to_dark": "Switch to Dark Theme",
-    "download_resume": "Download Resume",
-    "language_group": "Language",
-    "change_to_english": "Change to English",
-    "change_to_thai": "Change to Thai",
-    "change_to_chinese": "Change to Chinese"
-  },
   "footer": {
     "go_to_top": "Go to top"
   },
@@ -156,11 +142,34 @@
       "recruiter": "Recruiter / HR",
       "tech": "Hiring Manager (Tech)",
       "client": "Client / Designer",
-      "guest": "Just Browsing"
+      "guest": "Just Browsing",
+      "default": "General"
     }
   },
   "view_switcher": {
       "viewing_as": "Viewing as",
       "change_view": "Change View"
+  },
+  "contact_modal": {
+    "title": "Contact Me",
+    "subtitle": "Send me a message directly here.",
+    "name_label": "Name",
+    "name_placeholder": "Your Name",
+    "email_label": "Email",
+    "email_placeholder": "Your Email",
+    "message_label": "Message",
+    "message_placeholder": "Your message...",
+    "submit_button": "Send Message",
+    "sending": "Sending...",
+    "submission_success": "Message sent successfully!",
+    "submission_error": "Failed to send message. Please try again.",
+    "success_title": "Thank You!",
+    "success_message": "Your message has been sent. I will get back to you shortly.",
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "messageRequired": "Message is required"
+    }
   }
 }

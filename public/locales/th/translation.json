@@ -1,4 +1,9 @@
 {
+  "seo": {
+    "home_title": "กิตติศักดิ์ พันธุ์งาม - Portfolio สถาปนิกโซลูชันดิจิทัล",
+    "case_study_title": "{{projectTitle}} | Case Study",
+    "article_title": "{{articleTitle}} | Blog"
+  },
   "skip_to_content": "ข้ามไปยังเนื้อหาหลัก",
   "nav": {
     "overview": "ภาพรวม",
@@ -7,6 +12,7 @@
     "projects": "ผลงาน",
     "blog": "บทความ",
     "contact": "ติดต่อ",
+    "download_cv": "ดาวน์โหลด CV",
     "download_resume": "ดาวน์โหลดเรซูเม่",
     "theme_switcher": "เปลี่ยนธีม",
     "toggle_theme": "สลับธีมสว่างและมืด",
@@ -128,25 +134,6 @@
   },
   "case_study": { "back_to_projects": "กลับไปหน้าผลงาน", "problem": "ปัญหาและความท้าทาย", "role": "บทบาทของฉัน", "process": "กระบวนการ", "solution": "การแก้ไขปัญหา", "results": "ผลลัพธ์ที่สำคัญ", "gallery": "แกลเลอรีโปรเจกต์" },
   "modal": { "view_project": "ดูโปรเจกต์", "duration": "ระยะเวลา", "team_size": "ขนาดทีม", "tech": "เทคโนโลยี", "overview": "ภาพรวมโปรเจกต์", "details": "รายละเอียดการดำเนินงาน" },
-  "command_palette": {
-    "title": "เมนูคำสั่ง",
-    "placeholder": "พิมพ์คำสั่งหรือค้นหา...",
-    "no_results": "ไม่พบผลลัพธ์",
-    "navigation_group": "การนำทาง",
-    "go_to_home": "ไปที่: หน้าแรก",
-    "go_to_profile": "ไปที่: โปรไฟล์",
-    "go_to_expertise": "ไปที่: ความเชี่ยวชาญ",
-    "go_to_projects": "ไปที่: ผลงาน",
-    "go_to_contact": "ไปที่: ติดต่อ",
-    "actions_group": "การกระทำ",
-    "switch_to_light": "เปลี่ยนเป็นธีมสว่าง",
-    "switch_to_dark": "เปลี่ยนเป็นธีมมืด",
-    "download_resume": "ดาวน์โหลดเรซูเม่",
-    "language_group": "เปลี่ยนภาษา",
-    "change_to_english": "เปลี่ยนเป็นภาษาอังกฤษ",
-    "change_to_thai": "เปลี่ยนเป็นภาษาไทย",
-    "change_to_chinese": "เปลี่ยนเป็นภาษาจีน"
-  },
   "footer": {
     "go_to_top": "กลับไปด้านบนสุด"
   },
@@ -157,11 +144,34 @@
       "recruiter": "Recruiter / HR",
       "tech": "Hiring Manager (Tech)",
       "client": "ลูกค้า / Designer",
-      "guest": "แค่เข้ามาชม"
+      "guest": "แค่เข้ามาชม",
+      "default": "ทั่วไป"
     }
   },
   "view_switcher": {
       "viewing_as": "กำลังแสดงผลในมุมมองของ",
       "change_view": "เปลี่ยนมุมมอง"
+  },
+  "contact_modal": {
+    "title": "ติดต่อฉัน",
+    "subtitle": "ส่งข้อความถึงฉันได้โดยตรงที่นี่",
+    "name_label": "ชื่อ",
+    "name_placeholder": "ชื่อของคุณ",
+    "email_label": "อีเมล",
+    "email_placeholder": "อีเมลของคุณ",
+    "message_label": "ข้อความ",
+    "message_placeholder": "ข้อความของคุณ...",
+    "submit_button": "ส่งข้อความ",
+    "sending": "กำลังส่ง...",
+    "submission_success": "ส่งข้อความสำเร็จแล้ว!",
+    "submission_error": "ส่งข้อความไม่สำเร็จ กรุณาลองอีกครั้ง",
+    "success_title": "ขอบคุณครับ!",
+    "success_message": "ได้รับข้อความของคุณแล้ว จะรีบติดต่อกลับไปครับ",
+    "validation": {
+      "nameRequired": "กรุณากรอกชื่อ",
+      "emailRequired": "กรุณากรอกอีเมล",
+      "emailInvalid": "รูปแบบอีเมลไม่ถูกต้อง",
+      "messageRequired": "กรุณากรอกข้อความ"
+    }
   }
 }

@@ -1,4 +1,9 @@
 {
+  "seo": {
+    "home_title": "吉迪萨·潘昂 - 数字化解决方案架构师作品集",
+    "case_study_title": "{{projectTitle}} | 案例研究",
+    "article_title": "{{articleTitle}} | 博客"
+  },
   "skip_to_content": "跳至主要内容",
   "nav": {
     "overview": "概述",
@@ -7,12 +12,12 @@
     "projects": "项目",
     "blog": "博客",
     "contact": "联系方式",
+    "download_cv": "下载CV",
     "download_resume": "下载简历",
     "theme_switcher": "切换主题",
     "toggle_theme": "切换浅色和深色主题",
     "open_menu": "打开菜单",
     "close_menu": "关闭菜单",
-    "open_command_palette": "打开命令菜单"
   },
   "hero": {
     "role": "数字化解决方案架构师",
@@ -127,25 +132,6 @@
   },
   "case_study": { "back_to_projects": "返回项目列表", "problem": "问题与挑战", "role": "我的角色", "process": "过程", "solution": "解决方案", "results": "主要成果", "gallery": "项目画廊" },
   "modal": { "view_project": "查看项目", "duration": "持续时间", "team_size": "团队规模", "tech": "技术", "overview": "项目概述", "details": "实施细节" },
-  "command_palette": {
-    "title": "命令菜单",
-    "placeholder": "输入命令或搜索...",
-    "no_results": "未找到结果。",
-    "navigation_group": "导航",
-    "go_to_home": "转到：主页",
-    "go_to_profile": "转到：个人资料",
-    "go_to_expertise": "转到：专业技能",
-    "go_to_projects": "转到：项目",
-    "go_to_contact": "转到：联系方式",
-    "actions_group": "操作",
-    "switch_to_light": "切换到浅色主题",
-    "switch_to_dark": "切换到深色主题",
-    "download_resume": "下载简历",
-    "language_group": "语言",
-    "change_to_english": "切换到英语",
-    "change_to_thai": "切换到泰语",
-    "change_to_chinese": "切换到中文"
-  },
   "footer": {
     "go_to_top": "回到顶部"
   },
@@ -156,11 +142,34 @@
       "recruiter": "招聘人员 / HR",
       "tech": "招聘经理 (技术岗)",
       "client": "客户 / 设计师",
-      "guest": "随便看看"
+      "guest": "随便看看",
+      "default": "一般"
     }
   },
   "view_switcher": {
       "viewing_as": "当前视角",
       "change_view": "切换视角"
+  },
+  "contact_modal": {
+    "title": "联系我",
+    "subtitle": "直接在这里给我发消息。",
+    "name_label": "姓名",
+    "name_placeholder": "您的姓名",
+    "email_label": "电子邮件",
+    "email_placeholder": "您的电子邮件",
+    "message_label": "信息",
+    "message_placeholder": "您的信息...",
+    "submit_button": "发送信息",
+    "sending": "发送中...",
+    "submission_success": "消息发送成功！",
+    "submission_error": "消息发送失败。请再试一次。",
+    "success_title": "谢谢！",
+    "success_message": "您的消息已发送。我会尽快回复您。",
+    "validation": {
+      "nameRequired": "请输入姓名",
+      "emailRequired": "请输入电子邮件",
+      "emailInvalid": "电子邮件格式无效",
+      "messageRequired": "请输入信息"
+    }
   }
 }

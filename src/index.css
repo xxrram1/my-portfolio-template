@@ -6,13 +6,19 @@
   font-family: 'Kanit', sans-serif;
 }
 
+/* --- START: EDIT --- */
+/* ปรับโค้ด body ใหม่เพื่อให้มีมิติมากขึ้น */
 body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #36095e 0%, #5f009e 50%, #7a29ac 100%);
-  min-height: 100vh;
+  /* ใช้สีเทาอ่อนเป็นพื้นหลังหลักใน Light Mode เพื่อให้ส่วนประกอบสีขาวเด่นขึ้น */
+  @apply bg-slate-100 text-slate-800;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+/* ใช้สีดำสนิทเป็นพื้นหลังหลักใน Dark Mode เพื่อความลึกและคอนทราสต์สูงสุด */
+.dark body {
+  @apply bg-black text-slate-300;
+}
+/* --- END: EDIT --- */
 :root {
   --background: 0 0% 100%;
   --foreground: 240 10% 3.9%;
