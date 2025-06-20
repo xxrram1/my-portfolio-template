@@ -17,7 +17,7 @@
     "theme_switcher": "Switch Theme",
     "toggle_theme": "Toggle light and dark theme",
     "open_menu": "Open menu",
-    "close_menu": "Close menu",
+    "close_menu": "Close menu"
   },
   "hero": {
     "role": "Digital Solutions Architect",
@@ -142,7 +142,7 @@
       "recruiter": "Recruiter / HR",
       "tech": "Hiring Manager (Tech)",
       "client": "Client / Designer",
-      "guest": "Just Browsing",
+      "guest": "Just Browse",
       "default": "General"
     }
   },

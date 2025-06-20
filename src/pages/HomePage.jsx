@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react'; // --- แก้ไข: ลบ useMemo ออกจาก import ---
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -49,23 +49,25 @@ const ProjectCard = ({ project }) => {
 
 
 const HomePage = ({ setContactModalOpen }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation(); // --- แก้ไข: เพิ่ม i18n ---
   const { visitorType } = useVisitor();
   
-  const heroContent = useMemo(() => ({
+  // --- START: EDIT - ลบ useMemo ออกเพื่อให้ re-render เมื่อเปลี่ยนภาษา ---
+  const heroContent = {
     role: t('hero.role'),
     mainHeadline: t('hero.name_line1') + '\n' + t('hero.name_line2'),
     description: t('hero.description'),
-  }), [t]);
+  };
 
-  const projects = useMemo(() => staticProjects.map(p => ({
+  const projects = staticProjects.map(p => ({
     ...p,
     title: t(p.titleKey),
     category: t(p.categoryKey),
     description: t(p.descriptionKey),
-  })), [t]);
-
-  const sectionOrder = useMemo(() => {
+  }));
+  
+  const sectionOrder = React.useMemo(() => {
+  // --- END: EDIT ---
     switch (visitorType) {
       case 'recruiter':
         return ['hero', 'portfolio', 'skills', 'about', 'blog', 'contact'];
